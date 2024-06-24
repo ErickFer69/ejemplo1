@@ -37,6 +37,7 @@ if 'CODESPACE_NAME' in os.environ:
 # Application definition
 
 INSTALLED_APPS = [
+    "Erick.apps.ErickConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -44,7 +45,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_browser_reload",
-    "survivorcompass",
 ]
 
 MIDDLEWARE = [
@@ -130,7 +130,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "hello_world" / "static",
 ]
 
-STATIC_URL = "static/"
+#STATIC_URL = "static/"
+STATIC_URL = 'Erick/static/'
 STATIC_ROOT = BASE_DIR / "hello_world" / "staticfiles"
 
 MEDIA_URL = "media/"

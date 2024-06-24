@@ -11,7 +11,7 @@ def adios(request):
 def mostrarhtml(request):
     minombre = 'Erick'
     contexto = {
-        "minombre": 'Pepe'
+        "minombre": 'Alfonso Espinosa'
     }
     return render(request, "prueba.html", contexto)
 
